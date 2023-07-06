@@ -1,0 +1,19 @@
+console.log ("Moi, tässä minun versioni FizzBuzz tehtävästä Java Scriptillä! :)");
+
+var numbers = Array.from ({length:50}, (_,a)=>a+1);
+var output = [];
+
+for (var a of numbers){
+    if (a%2===0 && a%4===0){
+        output[a]="ei jakojäännöstä 2 tai 4:llä";
+    } else if (a%3===0){
+        output[a]="jakautuu tasan kolmella";
+    } else if (a%7===0){
+        output[a]="jakautuu tasan seitsemällä";
+    } else if (a%5===0){
+        output[a]="jakautuu viidellä";
+    } else {
+        output[a]=a;
+    }
+}
+console.log(output);

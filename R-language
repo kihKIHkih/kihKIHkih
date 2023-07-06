@@ -1,0 +1,17 @@
+print ("Moi, tässä minun versioni FizzBuzz tehtävästä R-kielellä! :)")
+
+numbers= 1:35
+output = vector()
+
+for (a in numbers) {
+    if (a %% 2 == 0 && a %% 4 == 0) {
+        output[a] = "ei jako jäännöstä 2 tai 4:lla"
+    } else if (a %% 3 == 0) {
+        output [a] = "jakautuu kolmella tasan"
+    } else if (a%%7==0){
+        output [a]="jakautuu tasan seitsemällä"
+    } else {
+        output [a]=a
+    }
+}
+print (output)

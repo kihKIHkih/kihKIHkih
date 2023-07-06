@@ -1,0 +1,16 @@
+print("Moi, tässä minun versioni FizzBuzz tehtävästä Pythonilla! :)")
+
+numbers = list(range(1, 40))
+output = []
+
+for a in numbers:
+    if a % 2== 0 and a%4 == 0:
+        output.append("ei jako jäännöstä 2 tai 4:lla")
+    elif a %3==0:
+        output.append("jakautuu kolmella tasan")
+    elif a%7 == 0:
+        output.append("jakautuu tasan seitsemällä")
+    else:
+        output.append(a)
+
+print(output)

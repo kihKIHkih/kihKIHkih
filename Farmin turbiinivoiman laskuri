@@ -1,0 +1,26 @@
+var allTurbines = 25
+var turbinePower = 0
+var sumPower = 0
+var turbineCounter = 0
+
+for (var i = 0; i < allTurbines; i++){
+  if (i < 10) {
+    turbineCounter++;
+    turbinePower = 2000;
+    sumPower += turbinePower;
+    console.log('Turbiini numero ' + turbineCounter + ' on käynnissä täydellä teholla, generoiden tällä hetkellä ' + turbinePower + ' MWh. Farmin yhteensä generoima energia tällä hetkellä on ' + sumPower + ' MWh.');
+  
+  } else if (i < 20){
+     turbineCounter++;
+    turbinePower = 1000;
+    sumPower += turbinePower;
+    console.log('Turbiini numero ' + turbineCounter + ' on käynnissä puolella teholla, generoiden tällä hetkellä ' + turbinePower + ' MWh. Farmin yhteensä generoima energia tällä hetkellä on ' + sumPower + ' Mwh.');
+
+  } else if (i < 25){
+     turbineCounter++;
+    turbinePower = 0;
+    sumPower += turbinePower;
+    console.log('Turbiini numero ' + turbineCounter + ' ei ole käynnissä, generoiden tällä hetkellä ' + turbinePower + ' MWh. Farmin yhteensä generoima energia tällä hetkellä on ' + sumPower + ' Mwh.');
+
+  } else {
+    console.log ('Jotain meni pieleen.');

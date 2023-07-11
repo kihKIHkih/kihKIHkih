@@ -1,1 +1,28 @@
+var allTurbines = 25
+var turbinePower = 0
+var sumPower = 0
+var turbineCounter = 0
 
+for (var i = 0; i < allTurbines; i++){
+  if (i < 10) {
+    turbineCounter++;
+    turbinePower = 2000;
+    sumPower += turbinePower;
+    console.log('Turbine number ' + turbineCounter + ' is running at full power, generating ' + turbinePower + ' MWh at the moment. The total sum of power generated at the farm at this moment is ' + sumPower + ' MWh.');
+  
+  } else if (i < 20){
+     turbineCounter++;
+    turbinePower = 1000;
+    sumPower += turbinePower;
+    console.log('Turbine number ' + turbineCounter + ' is running at half power, generating ' + turbinePower + ' MWh at the moment. The total sum of power generated at the farm at this moment is ' + sumPower + ' MWh.');
+  
+  } else if (i < 25){
+     turbineCounter++;
+    turbinePower = 0;
+    sumPower += turbinePower;
+    console.log('Turbine number ' + turbineCounter + ' is not on, generating ' + turbinePower + ' MWh at the moment. The total sum of power generated at the farm at this moment is ' + sumPower + ' MWh.');
+  
+  } else {
+    console.log ('Something unexpected happened.');
+}
+}

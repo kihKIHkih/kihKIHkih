@@ -8,19 +8,19 @@ for (var i = 0; i < allTurbines; i++){
     turbineCounter++;
     turbinePower = 2000;
     sumPower += turbinePower;
-    console.log('Turbiini numero ' + turbineCounter + ' on käynnissä täydellä teholla, generoiden tällä hetkellä ' + turbinePower + ' MWh. Farmin yhteensä generoima energia tällä hetkellä on ' + sumPower + ' MWh.');
+    console.log('Turbine number ' + turbineCounter + ' is running at full power, generating ' + turbinePower + ' MWh at the moment. The total sum of power generated at the farm at this moment is ' + sumPower + ' MWh.');
   
   } else if (i < 20){
      turbineCounter++;
     turbinePower = 1000;
     sumPower += turbinePower;
-    console.log('Turbiini numero ' + turbineCounter + ' on käynnissä puolella teholla, generoiden tällä hetkellä ' + turbinePower + ' MWh. Farmin yhteensä generoima energia tällä hetkellä on ' + sumPower + ' Mwh.');
-
+    console.log('Turbine number ' + turbineCounter + ' is running at half power, generating ' + turbinePower + ' MWh at the moment. The total sum of power generated at the farm at this moment is ' + sumPower + ' MWh.');
+  
   } else if (i < 25){
      turbineCounter++;
     turbinePower = 0;
     sumPower += turbinePower;
-    console.log('Turbiini numero ' + turbineCounter + ' ei ole käynnissä, generoiden tällä hetkellä ' + turbinePower + ' MWh. Farmin yhteensä generoima energia tällä hetkellä on ' + sumPower + ' Mwh.');
-
+    console.log('Turbine number ' + turbineCounter + ' is not on, generating ' + turbinePower + ' MWh at the moment. The total sum of power generated at the farm at this moment is ' + sumPower + ' MWh.');
+  
   } else {
-    console.log ('Jotain meni pieleen.');
+    console.log ('Something unexpected happened.');
